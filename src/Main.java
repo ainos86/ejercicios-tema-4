@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) {
+    public static void ejercicioIf() {
         int numerolf = 3;
 
         if (numerolf > 0) {
@@ -16,9 +16,7 @@ public class Main {
 
     }
 
-}
-
-    public static void{
+    public static void ejercicioWhile() {
         int numberWhile = -10;
 
         while (numberWhile < 3) {
@@ -26,37 +24,60 @@ public class Main {
             numberWhile = numberWhile + 1;
         }
     }
-}
-    public static void{
+
+    public static void ejercicioDoWhile() {
         int numberWhile = -10;
 
-        do{
-            while (numberWhile < 3) {
+        do {
             System.out.println(numberWhile);
             numberWhile = numberWhile + 1;
+        } while (numberWhile < 3);
+    }
+
+    public static void ejercicioFor() {
+        for (int numeroFor = 0; numeroFor <= 3; numeroFor = numeroFor + 1) {
+            System.out.println(numeroFor);
         }
     }
-}
-    public static void{
-        for(int numeroFor = 0; numeroFor <=3; numeroFor = numeroFor + 1){
-            system.out.println(numeroFor);
-        }
-}
 
-    public static void{
+    public static void ejercicioSwitch() {
         var estacion = "invierno";
 
-        switch (estacion){
+        switch (estacion) {
             case "verano":
-                system.out.println (es verano);
+                System.out.println("es verano");
+                break;
 
             case "invierno":
-                system.out.println (es invierno);
+                System.out.println("es invierno");
+                break;
 
             case "otoño":
-                system.out.println (es otoño);
+                System.out.println("es otoño");
+                break;
 
             case "primavera":
-                system.out.println (es primavera);
+                System.out.println("es primavera");
+                break;
+
+            default:
+                System.out.println(estacion);
+
+        }
+    }
+
+
+public static void main(String[] args) {
+
+        ejercicioIf();
+
+        ejercicioWhile();
+
+        ejercicioDoWhile();
+
+        ejercicioFor();
+
+        ejercicioSwitch();
+
         }
 }
